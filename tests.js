@@ -40,3 +40,21 @@ describe('sayHello', function() {
         expect(sayHello(false)).toBe("Hello, World");
     });
 });
+
+describe('isFive', function() {
+    it('should be a defined function', function() {
+        expect(typeof isFive).toBe('function');
+    });
+    it('should return true when called with parameter 5', function() {
+        expect(isFive(5)).toBe(true);
+    });
+    it('should return false when called with parameter "5"', function() {
+        expect(isFive("5")).toBe(false);
+    });
+    it('should return true when called with parameter 5', function() {
+        expect(isFive(5)).toBe(true);
+    });
+    it('should return false when called with no parameter', function() {
+        expect(isFive()).toBe(false);
+    });
+});
