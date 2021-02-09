@@ -9,7 +9,6 @@ function sayHello(name) {
         case (null):
         case (typeof name === "object"):
         case (typeof name === "number"):
-        case (Number(name) !== NaN):
         case (undefined):
             return "Hello, World";
         default:
@@ -18,10 +17,16 @@ function sayHello(name) {
 
 }
 function isFive(num) {
-    if (num === 5) {
-        return true;
-    }
-    else {
+    return num === 5;
+}
+
+//wow
+function isEven(num) {
+    if (num === Infinity || typeof num === "boolean" || typeof num === "object" || typeof num === "undefined") {
         return false;
     }
+    else {
+        return num % 2 === 0 || Number(num) % 2 === 0;
+    }
+
 }
