@@ -24,4 +24,7 @@ describe('sayHello', function() {
     it('should return "Hello, Jane" when called with parameter "Jane"', function() {
         expect(sayHello("Jane")).toBe('Hello, Jane');
     });
+    it('should return "Hello, Alex" when called with parameter "Alex"', function() {
+        expect(sayHello("Alex")).toBe('Hello, Alex');
+    });
 });
