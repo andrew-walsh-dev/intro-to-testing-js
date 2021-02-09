@@ -28,5 +28,22 @@ function isEven(num) {
     else {
         return num % 2 === 0 || Number(num) % 2 === 0;
     }
+}
 
+function isVowel(char) {
+    if (typeof char === "string" && char.length === 1) {
+        switch (char.toLowerCase()) {
+            case "a":
+            case "e":
+            case "i":
+            case "o":
+            case "u":
+                return true;
+            default:
+                return false;
+        }
+    }
+    else {
+        return false;
+    }
 }
